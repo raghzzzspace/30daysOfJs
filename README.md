@@ -1,5 +1,4 @@
 # 30daysOfJs
------------------------------------
 Tasks given by OCD, NIT KURUKSHETRA
 -----------------------------------
 Day 1: Variables and Datatypes   
