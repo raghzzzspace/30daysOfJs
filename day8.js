@@ -99,3 +99,4 @@ const person2 = {
 console.log(person2);
 //output
 //{ firstName: 'John', lastName: 'Doe', age: 30 }
+
