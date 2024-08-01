@@ -18,3 +18,5 @@ Day 7: Object, de-structure and JSON API
 Day 8: ES6+ Features
 
 Day 9: DOM Manipulation
+
+Day 10: Event Handling
