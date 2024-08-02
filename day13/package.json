@@ -1,0 +1,16 @@
+{
+  "name": "30daysofjs-1",
+  "version": "1.0.0",
+  "description": "Tasks given by OCD, NIT KURUKSHETRA",
+  "main": "day0.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0" 
+  }
+}
