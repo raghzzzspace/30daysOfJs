@@ -181,7 +181,7 @@ fetchData()
     .catch(error => console.log(error));
 //Error: HTTP error! status: 404
 
-//Task9 Use the fetch API to request data from an invalid URL within an sync function and handle the error using .catch(). Log an appropriate message to the console
+//Task9 Use the fetch API to request data from an invalid URL within an async function and handle the error using .catch(). Log an appropriate message to the console
 
 const getFacts=async()=>
     {
