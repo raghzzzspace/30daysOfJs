@@ -218,7 +218,7 @@ inorder(root);
 // 3
 // 7
 
-//Write a recursive function to log the depth of a binary tree.
+//Task10 Write a recursive function to log the depth of a binary tree.
 
 function height(root) {
     if (root === null) {
