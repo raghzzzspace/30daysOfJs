@@ -1,4 +1,4 @@
-# 30daysOfJs
+30daysOfJs
 Tasks given by OCD, NIT KURUKSHETRA
 -----------------------------------
 Day 1: Variables and Datatypes
@@ -28,3 +28,5 @@ Day 12: Error Handling
 Day 13: Modules
 
 Day 14: Classes
+
+Day 15: Closures
