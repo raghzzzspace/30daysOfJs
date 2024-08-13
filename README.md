@@ -38,3 +38,5 @@ Day 17: Data Structures
 Day 18: Algorithms
 
 Day 19: Regular Expressions
+
+Day 20: Local & Session Storage 
