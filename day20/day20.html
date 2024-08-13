@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="display"></div>
+
+    <script>
+        // Function to save data to localStorage and display it
+        // function myfunction(event) {
+        //     event.preventDefault(); // Prevent the form from submitting and refreshing the page
+        //     let n = document.getElementById('name').value;
+        //     let e = document.getElementById('email').value;
+        //     localStorage.setItem("NAME", n);
+        //     localStorage.setItem("EMAIL", e);
+        //     displayData(); // Call displayData to update the display immediately after saving
+        // }
+
+        // // Function to retrieve and display data on page load
+        // function displayData() {
+        //     let nn = localStorage.getItem("NAME");
+        //     let ee = localStorage.getItem("EMAIL");
+        //     if (nn && ee) { // Check if data exists in localStorage
+        //         document.getElementById('display').textContent = `Name: ${nn}, Email: ${ee}`;
+        //     }
+        // }
+
+        // // Attach event listener to the form
+        // document.getElementById("userForm").addEventListener('submit', myfunction);
+
+        // // Display data when the page loads
+        // window.onload = displayData;
+    
+
+        const vall="Raghvi";
+sessionStorage.setItem("name",vall);
+
+console.log(sessionStorage.getItem("name"));
+
+
+const obj={"name":'Raghvi',"age":25};
+sessionStorage.setItem("data",JSON.stringify(obj));
+
+const k=sessionStorage.getItem("data");
+console.log(JSON.parse(k));
+
+
+
+function myfunction2(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+            let n = document.getElementById('name').value;
+            let e = document.getElementById('email').value;
+            sessionStorage.setItem("NAME", n);
+            sessionStorage.setItem("EMAIL", e);
+            displayData2(); // Call displayData to update the display immediately after saving
+        }
+
+        // Function to retrieve and display data on page load
+        function displayData2() {
+            let nn = sessionStorage.getItem("NAME");
+            let ee = sessionStorage.getItem("EMAIL");
+            if (nn && ee) { // Check if data exists in localStorage
+                document.getElementById('display').textContent = `Name: ${nn}, Email: ${ee}`;
+            }
+        }
+
+        // Attach event listener to the form
+        document.getElementById("userForm").addEventListener('submit', myfunction2);
+
+        // Display data when the page loads
+        window.onload = displayData2;
+
+
+console.log(sessionStorage);
+sessionStorage.removeItem("name");
+console.log(sessionStorage);
+console.log('removed');
+
+
+
+
+function saveAndLog(key, value) {
+    // Save to localStorage
+    localStorage.setItem(key, value);
+    // Save to sessionStorage
+    sessionStorage.setItem(key, value);
+
+    // Retrieve from localStorage
+    const localValue = localStorage.getItem(key);
+    // Retrieve from sessionStorage
+    const sessionValue = sessionStorage.getItem(key);
+
+    // Log the values
+    console.log(`LocalStorage - Key: ${key}, Value: ${localValue}`);
+    console.log(`SessionStorage - Key: ${key}, Value: ${sessionValue}`);
+}
+saveAndLog('Key','hi');
+
+
+function clearAllStorage() {
+            // Clear localStorage
+            localStorage.clear();
+            // Clear sessionStorage
+            sessionStorage.clear();
+
+            // Verification
+            if (localStorage.length === 0 && sessionStorage.length === 0) {
+                console.log("Both localStorage and sessionStorage are empty.");
+            } else {
+                console.log("Storage clear failed. Items still exist in storage.");
+            }
+        }
+
+        clearAllStorage();
+
+    </script>
+</body>
+</html>
