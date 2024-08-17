@@ -40,3 +40,5 @@ Day 18: Algorithms
 Day 19: Regular Expressions
 
 Day 20: Local & Session Storage 
+
+Day 21: Leetcode Easy
